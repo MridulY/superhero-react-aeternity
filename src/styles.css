@@ -1,0 +1,91 @@
+@import '~tailwindcss/base';
+@import '~tailwindcss/components';
+@import '~tailwindcss/utilities';
+
+body {
+  padding: 1rem;
+}
+
+.nav {
+  margin-bottom: 1rem;
+  background-color: #38a169;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  padding: 0.5rem;
+  flex-grow: 1;
+}
+
+.nav a.active {
+  background-color: #2f855a;
+}
+
+button {
+  width: 10rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 9999px;
+  background-color: #9f7aea;
+  color: #fff;
+  font-size: 0.75rem;
+}
+
+button:disabled {
+  background-color: #c4b5fd;
+  cursor: not-allowed;
+}
+
+h2 {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+input:not([type=radio]):not([type=checkbox]),
+textarea {
+  background-color: #1a202c;
+  color: #fff;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+textarea {
+  height: 16rem;
+}
+
+.group {
+  border: 1px solid #e2e8f0;
+  margin-top: 1rem;
+  border-radius: 0.25rem;
+  background-color: #f7fafc;
+  font-family: monospace;
+}
+
+.group > div {
+  display: flex;
+}
+
+.group > div > * {
+  padding: 0.5rem;
+}
+
+.group > div > :nth-child(1) {
+  width: 25%;
+  font-weight: bold;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.group > div > :nth-child(2) {
+  width: 75%;
+  word-break: break-word;
+  white-space: pre-wrap;
+}
+
+.error {
+  color: #9f7aea;
+}
